@@ -8,9 +8,14 @@ Original file is located at
 """
 
 from display import plotHistoClasses, plotGallery
+import numpy as np
 [X, y, name]=np.load("TP1.npy",allow_pickle=True )
+from matplotlib import pyplot as plt
 plotGallery(X)
 plotHistoClasses(y)
+
+# Add this line to keep the plots open
+plt.show()
 
 """There are 7 classes. We can check this at the variables lookup on the left under the variable "name". In total we have 1288 images and their size is 62x47
 
@@ -152,7 +157,7 @@ Once we have our initial data, we need to reshape their form so that we can have
 
 Once we have received this one, we must standarize the data before we apply the KPPV algorithm. We need to that because the data are not forcement consistent between them, meaning that when we try to take the euclidian distance for an unknown data, the result won't be coherent. So we standarise the data using the scaler. To do that we take the reshpaed data where we extract the moyenne and the variance for every collumn of from data_image_pixels and we transform/standarize the data by using the formula (data - moyenne)/variance. This is done automaticly from the transform function.
 
-Now we can move on a nd apply the KPPV.
+Now we can move on and apply the KPPV.
 
 # Applying KPPV algorithm
 """
@@ -168,7 +173,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
 # Defining the classifier 1PPV in order to use euclidian method for the distance and 1 neighboorh parameter as asked on the subject of the TP
-knn = KNeighborsClassifier(n_neighbors=1, metric='euclidean')
+knn = KNeighborsClassifier(n_neighbors=1, metric='manhattan')
 
 # Taking the standarised database and we train it using the y_train
 knn.fit(X_train_scaled, y_train) # We are putting the training data on the 1PPN
@@ -236,6 +241,7 @@ print("Taux de reconnaissance K = 3 :", accuracy3) # The taux de reconnaisance a
 
 # prompt: We accept the 1PPV since it has the best taux de reconnaisance. The greater the taux is, the better the results are. **Now applying the X_test for verification of the results.**
 
+# On va entrainer le model avec knn.fit(X_train_scaled, y_train et apres on predict selon celui là)
 y_pred_test = knn.predict(X_test_scaled)
 
 # Matrice de confusion

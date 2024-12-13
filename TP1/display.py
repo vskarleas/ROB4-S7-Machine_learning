@@ -40,9 +40,9 @@ def plotPerf(tReco, sLbl=None):
 
 # %% TP5
 def aff_donnees(X,y,bornex,borney,s):
-    plt.scatter(X[:, 0], X[:, 1], c=y, s=s, cmap='winter');
-    plt.xlim(bornex);
-    plt.ylim(borney);
+    plt.scatter(X[:, 0], X[:, 1], c=y, s=s, cmap='winter')
+    plt.xlim(bornex)
+    plt.ylim(borney)
 
 
 

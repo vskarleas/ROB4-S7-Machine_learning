@@ -58,6 +58,6 @@ Welcome to the repository for the **Machine Learning** module. This course delve
 
 **Machine Learning - Polytech Sorbonne** © 2024 by Vasileios Filippos Skarleas is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/). 
 
-This repository may include content subject to copyright from other owners.
+This work also includes content that is not the property of Vasileios Filippos Skarleas and is subject to copyright and other licenses from their respective owners
 
 ---

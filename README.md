@@ -56,7 +56,7 @@ Welcome to the repository for the **Machine Learning** module. This course delve
 
 ### License Information
 
-**Machine Learning - Polytech Sorbonne** © 2024 by **[Your Name]** is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/). 
+**Machine Learning - Polytech Sorbonne** © 2024 by Vasileios Filippos Skarleas is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/). 
 
 This repository may include content subject to copyright from other owners.
 
